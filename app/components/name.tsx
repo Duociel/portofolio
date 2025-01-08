@@ -1,6 +1,6 @@
 import React from "react";
-import myProfile from "public/profile.png"
-import { motion } from "motion/react"; 
+import myProfile from "/profile.png";
+import { motion } from "motion/react";
 
 const Name = () => {
   return (
@@ -16,10 +16,8 @@ const Name = () => {
           <code>!!!</code>
         </pre>
       </div>
-      <motion.div whileHover={{scale:1.1}}>
-        <img
-        className="h-32 w-32 rounded-sm"
-        src={myProfile}></img>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <img className="h-32 w-32 rounded-sm" src={myProfile}></img>
       </motion.div>
     </div>
   );

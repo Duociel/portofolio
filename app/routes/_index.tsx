@@ -13,21 +13,21 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="mockup-browser bg-base-300 border h-screen w-screen">
+    <div className="mockup-browser bg-base-300 border h-screen w-screen overflow-hidden">
       <div className="mockup-browser-toolbar">
         <div className="input">https://gusz.my.id</div>
       </div>
-      <div className="bg-base-200 flex-col gap-6 px-4 py-16 w-full h-screen">
-        <div className="flex p-4">
+      <div className="bg-base-200 flex flex-col gap-6 px-4 py-16 w-full h-screen outline outline-yellow-100">
+        <div className="flex-1 p-4">
           <Name />
         </div>
         <div className="mt-6 p-4 flex-grow">
           <Description />
         </div>
-        <div className="bottom-0 mb-0"><Badge /></div>
-        
-      </div >
-      
+        <div className="absolute bottom-0 w-full mb-4">
+          <Badge />
+        </div>
+      </div>
     </div>
   );
 }

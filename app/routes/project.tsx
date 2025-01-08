@@ -11,7 +11,9 @@ export default function Project() {
         <div className="bg-base-200 flex justify-center gap-6 px-4 py-4 w-full">
           <My_project />
         </div>
-        <Badge />
+        <div className="bg-base-200">
+          <Badge />
+        </div>
       </div>
     </>
   );
